@@ -52,6 +52,11 @@ object WallService {
         return false
     }
 
+    fun clear() {
+        posts.clear()
+        nextId = 1
+    }
+
     fun getAll(): List<Post> = posts.toList()
 }
 
